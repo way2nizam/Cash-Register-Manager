@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-  margin: 10;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  align-items: center;
+
 }
 
 table,
