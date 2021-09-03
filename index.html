@@ -11,49 +11,81 @@
 
 <body>
 
-    <div class="container">
+    <header class="header">
         <h1 class="heading">Cash Register Manager</h1>
-        <p class="description"> Enter the bill amount and cash amount and know the minimum number of notes to return.
-        </p>
+    </header>
 
-        <label for="bill-amount">Bill Amount: </label>
-        <input type="number" id="bill-amount" />
+    <section class="section1">
+        <div class="container container-center">
+            <p class="description">Enter the bill amount and cash amount and know the minimum number of notes to return.
+            </p>
+        </div>
+    </section>
 
-        <label for="cash-given">Cash Given: </label>
-        <input type="number" id="cash-given" />
+    <section class="section2">
 
-        <button id="check-btn">Check</button>
+        <div class="container container-center">
+            <!-- <label for="bill-amount">Bill Amount: </label> -->
+            <input type="number" class='input-value' id="bill-amount" placeholder="Bill Amount" />
 
-        <div id="error-message"></div>
+            <!-- <label for="cash-given">Cash Given: </label> -->
+            <input type="number" class='input-value' id="cash-given" placeholder="Cash Amount" />
 
+            <button id="check-btn">Check</button>
 
-        <h2>Return Amount: </h2>
+            <div id="error-message"></div>
+        </div>
 
-        <table class="notes-table">
-            <tr>
-                <th>Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
+    </section>
 
-            </tr>
-            <tr>
-                <th>No. Of Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
-    </div>
+    <section class="section3">
+        <div class="container container-center">
 
+            <h4>Return Amount: </h4>
+
+            <table class="notes-table">
+                <tr>
+                    <th>Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+
+                </tr>
+                <tr>
+                    <th>No. Of Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    <footer class="footer-section">
+        <ul class="social-links list-non-bullet">
+
+            <li class="list-item-inline">
+                <a class="link" target=”_blank” href="https://nizam-portfolio-24x7.netlify.app/mark15.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" target=”_blank” href="https://github.com/way2nizam">github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" target=”_blank” href="https://twitter.com/nizamy710">twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" target=”_blank” href="https://www.linkedin.com/in/nizamy710/">linkedin </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="/index.js"></script>
 </body>

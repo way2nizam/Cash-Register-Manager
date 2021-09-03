@@ -13,7 +13,9 @@ function validateBillAndCashAmount() {
       const remainingAmount = cashGiven.value - billAmount.value;
       calculateChange(remainingAmount);
     } else {
-      showMessage('Error: do you want to wash plates');
+      showMessage(
+        'Error: do you want to wash plates ? Enter cash amount greater than bill amount.'
+      );
     }
   } else {
     showMessage('Error: Amount should be greater than zero');
